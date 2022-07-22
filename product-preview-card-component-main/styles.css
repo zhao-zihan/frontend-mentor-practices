@@ -7,4 +7,24 @@
 body {
   font-size: 87.5%;
   font-family: "Montserrat" sans-serif;
+  position: relative;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 30rem;
+  max-height: 50rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image {
+  display: inline-block;
+  max-width: 100%;
 }
