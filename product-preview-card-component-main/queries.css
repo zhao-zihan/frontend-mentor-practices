@@ -1,0 +1,6 @@
+/* Mobile : 375px */
+@media (max-width: 24em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

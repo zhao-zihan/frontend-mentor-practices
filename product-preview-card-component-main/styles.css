@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  width: 30rem;
+  max-width: 30rem;
   height: 22rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -34,12 +34,9 @@ body {
 }
 
 .image-box {
+  background-image: url(images/image-product-desktop.jpg);
   background-size: cover;
   background-position: center;
-}
-
-.image {
-  max-width: 100%;
 }
 
 .subheading {
