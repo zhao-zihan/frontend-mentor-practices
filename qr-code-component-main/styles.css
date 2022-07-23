@@ -40,7 +40,7 @@ body {
 .code-img {
   max-width: 100%;
   height: auto;
-  display: inline-block;
+  display: block;
   border-radius: 8px;
 }
 
