@@ -1,11 +1,8 @@
 /* Mobile : 375px */
-@media (max-width: 24em) {
+@media (max-width: 28em) {
   .container {
-    height: 40em;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 1.2em 1em;
-    padding-bottom: 2em;
   }
 
   .image-box {
