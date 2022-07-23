@@ -1,92 +1,197 @@
-# Frontend Mentor - Product preview card component
+# Frontend Mentor - Product preview card component solution
 
-![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Frontend Mentor - Product preview card component solution](#frontend-mentor---product-preview-card-component-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this product preview card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](markdown-img/2022-07-22-22-33-59.png)
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Links
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## Building your project
+## My process
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Built with
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- HTML5
+- CSS
+- Flexbox
+- CSS Grid
 
-## Deploying your project
+### What I learned
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+1. global reset
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+   ```css
+   * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: "Montserrat", sans-serif;
+   }
+   ```
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+2. set font size
 
-## Create a custom `README.md`
+   ```css
+   html {
+     /* 16px * 0.625 = 10px */
+     font-size: 62.5%;
+   }
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+   body {
+     /* default size: 14px */
+     font-size: 1.4rem;
+   }
+   ```
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+- rem based on root font size
+- em based on parent element font size
+- font-size: rem
+- width: % in combination with a max-width, ch
+- height: question urself "do i rly need to set height" if yes -> use a min-height
+- padding/margin: rem or em, kevin often uses em for padding of buttons
+- media queries: em
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+3. center a div in viewport
 
-## Submitting your solution
+   ```css
+   body {
+     display: grid;
+     place-content: center;
+     min-height: 100vh;
+     /* vh = view height */
+   }
+   ```
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+4. hide image corners under border radius
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+   ```css
+   .parent-container {
+     overflow: hidden;
+   }
+   ```
 
-## Sharing your solution
+5. create image box
 
-There are multiple places you can share your solution:
+   ```html
+   <div class="image-box" role="img" aria-label="description"></div>
+   ```
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+   ```css
+   .image-box {
+     background-image: url(images/image-product-desktop.jpg);
+     background-size: cover;
+     background-position: center;
+   }
+   ```
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+6. organize text box
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+   ```css
+   /* grid */
+   .text-box {
+     display: grid;
+     grid-template-columns: 1fr;
+     /* use gap to create margins */
+     gap: 1em;
+   }
 
-## Got feedback for us?
+   /* flexbox */
+   .text-box {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 1em;
+   }
+   ```
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+7. create subheadings
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+   ```html
+   <div class="subheading">perfume</div>
+   <h1 class="heading">Gabrielle Essence Eau De Parfum</h1>
+   ```
 
-**Have fun building!** 🚀
+8. inline elements
+
+   - have left / right paddings & margins
+   - no top / bottom paddings or margins
+
+9. button that auto align with other text
+
+   ```css
+   .btn,
+   .btn:link,
+   .btn:visited {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     border: none;
+     background-color: hsl(158, 36%, 37%);
+     color: hsl(0, 0%, 100%);
+     border-radius: 5px;
+     cursor: pointer;
+     font-weight: 600;
+     padding: 1rem;
+   }
+
+   .btn:hover,
+   .btn:active {
+     background-color: hsl(212, 21%, 14%);
+   }
+   ```
+
+### Continued development
+
+### Useful resources
+
+- [Are you using the right CSS units?](https://www.youtube.com/watch?v=N5wpD9Ov_To) - Helped me understand which unit to use when defining different CSS properties and also why and hot to reset font sizes.
+- [CSS em and rem explained](https://www.youtube.com/watch?v=_-aDOAMmDHI&t=420s) - Explains the difference between em and rem.
+
+## Author
+
+- Website - [Zihan](https://product-preview-component-07-22.netlify.app)
+- Github - [@zhao-zihan](https://github.com/zhao-zihan)
+
+**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
+## Acknowledgments
+
+Special thanks to @celioFagundes
+https://www.frontendmentor.io/solutions/htmlcssmobilefirst-Hxl7rhCkG7
