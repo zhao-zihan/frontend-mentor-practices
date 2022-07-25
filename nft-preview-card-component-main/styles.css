@@ -34,8 +34,45 @@ body {
   padding: 1.6rem;
 }
 
+.image-box {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: rgba(0, 255, 247, 0.476);
+  border-radius: 8px;
+}
+
+.image-box:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.view-icon {
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .nft-img {
   max-width: 100%;
   display: block;
   border-radius: 8px;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
