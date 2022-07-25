@@ -1,0 +1,10 @@
+@media (max-width: 25em) {
+  .plan-box {
+    gap: 0;
+    padding: 1rem 1rem;
+  }
+
+  .plan-mid-box {
+    font-size: 0.8em;
+  }
+}
