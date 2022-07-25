@@ -22,11 +22,96 @@ body {
   padding: 2.5rem 2rem;
 }
 
-.container {
-  max-width: 50rem;
+span {
+  display: inline-block;
 }
 
-.background-img {
-  position: absolute;
-  z-index: -1;
+.container {
+  background-color: #fff;
+  max-width: 36rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+.text-container {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.4rem;
+}
+
+.description {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6;
+}
+
+.plan-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 8px;
+  padding: 2rem 2rem;
+  gap: 2rem;
+}
+
+.plan-mid-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-right: 2rem;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.price {
+  color: hsl(224, 23%, 55%);
+}
+
+.btn-change {
+  font-size: 1.4rem;
+  color: hsl(245, 75%, 52%);
+}
+
+.btn-change:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.btn-payment {
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1rem 1rem rgba(56, 41, 224, 0.267);
+}
+
+.btn-payment:hover {
+  background-color: rgba(56, 41, 224, 0.551);
+  cursor: pointer;
+}
+
+.btn-cancel {
+  border: none;
+  background-color: #fff;
+  color: hsl(224, 23%, 55%);
+}
+
+.btn-cancel:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
 }
