@@ -6,8 +6,27 @@
 
 html {
   font-size: 62.5%;
+  height: -webkit-fill-available;
 }
 
 body {
   font-size: 1.6rem;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  padding: 2.5rem 2rem;
+}
+
+.container {
+  max-width: 50rem;
+}
+
+.background-img {
+  position: absolute;
+  z-index: -1;
 }
