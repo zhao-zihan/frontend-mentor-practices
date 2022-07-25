@@ -1,0 +1,6 @@
+@media (max-width: 32em) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+}
