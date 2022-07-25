@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: hsl(217, 54%, 11%);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+}
