@@ -13,6 +13,7 @@
 
 html {
   font-size: 62.5%;
+  height: -webkit-fill-available; /* We have to fix html height */
 }
 
 body {
@@ -21,7 +22,9 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
-  padding: 2rem;
+  min-height: -webkit-fill-available;
+  padding: 2.5rem 2rem;
+  position: relative;
 }
 
 .container {
@@ -80,7 +83,7 @@ body {
 
 .nft-name {
   color: hsl(0, 0%, 100%);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2rem;
   letter-spacing: 1px;
 }
@@ -112,8 +115,44 @@ body {
 
 .price {
   color: hsl(178, 100%, 50%);
+  font-weight: 400;
 }
 
 .days-left {
   color: hsl(215, 51%, 70%);
+}
+
+.creator-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.creator-img {
+  max-width: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+.creator-name {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.creator-name span {
+  color: hsl(0, 0%, 100%);
+}
+
+.creator-name span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: hsl(0, 0%, 100%);
 }
