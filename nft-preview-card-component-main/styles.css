@@ -1,3 +1,10 @@
+/* 
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
 * {
   padding: 0;
   margin: 0;
@@ -18,4 +25,17 @@ body {
 
 .container {
   background-color: hsl(216, 50%, 16%);
+  max-width: 26rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 1.6rem;
+}
+
+.nft-img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
 }
