@@ -58,6 +58,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
    ```
 
 2. create crop image effect
+
    ![](markdown-img/2022-07-26-15-42-28.png)
 
    ```html
@@ -80,6 +81,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
    ```
 
 3. take a look at the space-around property
+
    ![](markdown-img/2022-07-26-15-46-23.png)
 
    ```css
