@@ -59,6 +59,7 @@ Users should be able to:
    ```
 
 2. use grid to create horizontal container with no gap setting
+
    ![](markdown-img/2022-07-25-20-30-36.png)
 
 3. must provide height for empty div with background image when placing at the first row inside of a grid to reveal the picture
