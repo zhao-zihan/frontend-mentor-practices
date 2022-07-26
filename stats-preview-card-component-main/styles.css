@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  height: -webkit-fill-available;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  position: relative;
+  padding: 2.5rem 2rem;
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
