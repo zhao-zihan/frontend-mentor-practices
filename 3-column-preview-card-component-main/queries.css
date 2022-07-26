@@ -1,6 +1,6 @@
 @media (max-width: 32em) {
   .container {
-    max-width: 24em;
+    max-width: 24rem;
     flex-direction: column;
     margin-bottom: 5rem;
   }
