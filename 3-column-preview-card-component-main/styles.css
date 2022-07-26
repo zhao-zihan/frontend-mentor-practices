@@ -35,6 +35,11 @@ body {
   position: relative;
 }
 
+.sub-container img {
+  width: 6.4rem;
+  height: auto;
+}
+
 .sedans {
   background-color: hsl(31, 77%, 52%);
 }
