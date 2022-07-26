@@ -17,6 +17,7 @@ body {
   padding: 2.5rem 2rem;
   position: relative;
   min-height: -webkit-fill-available;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .container {
