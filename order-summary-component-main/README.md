@@ -70,6 +70,7 @@ Users should be able to:
    ![](markdown-img/2022-07-25-17-17-39.png)
 
 3. use more transparent color for hovering effect
+
    ![](markdown-img/2022-07-25-17-19-29.png)
    ![](markdown-img/2022-07-25-17-19-04.png)
 
