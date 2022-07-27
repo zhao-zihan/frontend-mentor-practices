@@ -30,24 +30,7 @@ img {
   display: block;
 }
 
-/* .pattern-top {
-  position: absolute;
-  top: -50%;
-  left: -5%;
-}
-
-.pattern-bottom {
-  position: absolute;
-  right: -5%;
-  bottom: -60%;
-} */
-
 .container {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  /* position: relative; */
   max-width: 40rem;
   background-color: #fff;
   border-radius: 12px;
@@ -73,19 +56,11 @@ span {
   max-width: 100%;
 }
 
-/* .image-box {
-  position: relative;
-} */
-
 .profile-photo {
   width: 10rem;
   border-radius: 50%;
   border: 4px solid #fff;
   margin-top: -54px;
-  /* position: absolute;
-  left: 50%;
-  top: 38%;
-  transform: translate(-50%, -50%); */
 }
 
 .text-box {
@@ -93,29 +68,29 @@ span {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  /* margin-top: 8rem; */
 }
 
 .basic-info {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+  text-align: center;
+}
+
+.name {
+  font-weight: 700;
 }
 
 .age {
   color: hsl(0, 0%, 59%);
+  font-weight: 400;
 }
 
 .city {
   color: hsl(0, 0%, 59%);
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1rem 0 2rem 0;
 }
 
 .profile-stats {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  gap: 1rem; */
   width: 100%;
   display: flex;
   justify-content: space-around;
