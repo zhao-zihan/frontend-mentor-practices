@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  max-width: 100rem;
+  max-width: 90rem;
   margin: auto;
   padding: 3rem 3rem;
 }
@@ -36,6 +36,7 @@ body {
 .top {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 10rem;
 }
 
 .heading {
@@ -58,7 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .ratings li {
@@ -89,4 +90,55 @@ body {
 .star-icon {
   width: 1.4rem;
   height: auto;
+}
+
+.testimonials {
+  display: flex;
+  gap: 2rem;
+  min-height: 23rem;
+}
+
+.testimonial {
+  background-color: hsl(300, 43%, 22%);
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.testimonials .testimonial:nth-child(1) {
+  align-self: flex-start;
+}
+.testimonials .testimonial:nth-child(2) {
+  align-self: center;
+}
+.testimonials .testimonial:nth-child(3) {
+  align-self: flex-end;
+}
+
+.customer-info-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.customer-image {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+  line-height: 1.2;
+}
+
+.name span {
+  color: hsl(333, 80%, 67%);
+}
+
+.testimonial-text {
+  color: hsl(300, 24%, 96%);
+  font-weight: 400;
+  line-height: 1.2;
 }
