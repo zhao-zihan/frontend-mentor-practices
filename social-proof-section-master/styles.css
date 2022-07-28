@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  height: -webkit-fill-available;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   background-position: left 0 top 0, right 0 bottom 0;
   display: flex;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   position: relative;
   padding: 2.5rem 2rem;
 }
