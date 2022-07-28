@@ -47,7 +47,7 @@ body {
 .top {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 10rem;
+  column-gap: 6rem;
   margin-bottom: 2rem;
 }
 
@@ -72,6 +72,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   margin-top: 1rem;
+  max-width: 44rem;
 }
 
 .ratings li {
@@ -79,7 +80,7 @@ body {
   gap: 2rem;
   align-items: baseline;
   background-color: hsl(300, 24%, 96%);
-  max-width: 32rem;
+  max-width: 36rem;
   padding: 1.5rem 2rem;
   border-radius: 5px;
   color: hsl(300, 43%, 22%);
