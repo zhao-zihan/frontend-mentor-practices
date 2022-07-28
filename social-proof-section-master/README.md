@@ -1,91 +1,124 @@
-# Frontend Mentor - Social proof section
+# Frontend Mentor - Social proof section solution
 
-![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Frontend Mentor - Social proof section solution](#frontend-mentor---social-proof-section-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this social proof section and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the section depending on their device's screen size
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](markdown-img/2022-07-28-14-53-00.png)
+![](markdown-img/2022-07-28-14-57-31.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Solution](https://github.com/zhao-zihan/frontend-mentor-practices/tree/main/social-proof-section-master)
+- Live Site URL: [Live site](https://social-proof-section-master-07-28.netlify.app/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Desktop-first workflow
 
-## Building your project
+### What I learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+1. new way to center content using flex
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+   ```css
+   .parent {
+     display: flex;
+   }
+   .child {
+     margin: auto;
+   }
+   ```
 
-## Deploying your project
+2. know well about align and justify properties, remember to create enough space by setting parent container size much bigger than individual items
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+   ![](markdown-img/2022-07-28-15-01-44.png)
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+   ```css
+   .ratings li:nth-child(1) {
+     align-self: flex-start;
+   }
+   .ratings li:nth-child(2) {
+     align-self: center;
+   }
+   .ratings li:nth-child(3) {
+     align-self: flex-end;
+   }
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+   .testimonials .testimonial:nth-child(1) {
+     align-self: flex-start;
+   }
+   .testimonials .testimonial:nth-child(2) {
+     align-self: center;
+   }
+   .testimonials .testimonial:nth-child(3) {
+     align-self: flex-end;
+   }
+   ```
 
-## Create a custom `README.md`
+3. grid column row properties review
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+   ```css
+   .mission {
+     grid-column: 1;
+   }
+   .ratings {
+     grid-column: 2;
+     grid-row: 1 / span 2;
+   }
+   ```
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+4. simpler way to position background images
+   ```css
+   body {
+     background-image: url("images/bg-pattern-top-desktop.svg"),
+       url("images/bg-pattern-bottom-desktop.svg");
+     background-repeat: no-repeat, no-repeat;
+     background-position: left 0 top 0, right 0 bottom 0;
+     min-height: 100vh;
+     min-height: -webkit-fill-available;
+   }
+   ```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### Continued development
 
-## Submitting your solution
+### Useful resources
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Check out the flexbox properties and examples section.
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - Check out the grid properties section.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+## Author
 
-## Sharing your solution
+- Website - [Zihan](https://social-proof-section-master-07-28.netlify.app/)
+- Github- [@zhao-zihan](https://github.com/zhao-zihan)
 
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+## Acknowledgments
