@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "League Spartan", sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  font-family: "League Spartan", sans-serif;
   font-size: 1.5rem;
   background-image: url("images/bg-pattern-top-desktop.svg"),
     url("images/bg-pattern-bottom-desktop.svg");
@@ -26,6 +27,14 @@ body {
   max-width: 90rem;
   margin: auto;
   padding: 3rem 3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .attribution {
