@@ -85,12 +85,15 @@ body {
   font-weight: 500;
 }
 
+.ratings li:nth-child(1) {
+  align-self: flex-start;
+}
 .ratings li:nth-child(2) {
-  margin-left: 3rem;
+  align-self: center;
 }
 
 .ratings li:nth-child(3) {
-  margin-left: 6rem;
+  align-self: flex-end;
 }
 
 .stars {
