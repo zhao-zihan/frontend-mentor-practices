@@ -34,6 +34,7 @@ body {
   margin-bottom: 2rem;
   color: hsl(229, 6%, 66%);
   font-size: 3.5rem;
+  line-height: 1.4;
 }
 
 .heading strong {
@@ -42,14 +43,14 @@ body {
 
 .description {
   color: hsl(229, 6%, 66%);
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .card {
@@ -68,6 +69,7 @@ body {
 
 .card-description {
   color: hsl(229, 6%, 66%);
+  font-weight: 400;
 }
 
 .card-icon {
