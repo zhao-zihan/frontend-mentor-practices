@@ -1,0 +1,25 @@
+@media (max-width: 25em) {
+  .container {
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+  }
+
+  .cta {
+    grid-row: 1;
+    padding: 3rem 2rem;
+  }
+
+  .plan {
+    grid-row: 2;
+    padding: 3rem 2rem 2rem 2rem;
+  }
+
+  .plan-text {
+    margin-bottom: 3rem;
+  }
+
+  .why {
+    grid-row: 3;
+    padding: 3rem 2rem;
+  }
+}
