@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  padding: 2.5rem 2rem;
+}
+
+.container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 55rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cta {
+  grid-column: 1 / span 2;
+  padding: 3rem 3rem;
+}
+
+.cta-heading {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.cta-subheading {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1rem;
+}
+
+.cta-text {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.4;
+}
+
+.plan {
+  background-color: hsl(179, 62%, 43%);
+  padding: 3rem 3rem;
+}
+
+.plan-heading {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.plan-price {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.plan-rate span {
+  display: block;
+}
+
+.plan-rate {
+  color: hsla(203, 44%, 93%, 0.691);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 400;
+}
+
+.plan-text {
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border: none;
+  min-width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  padding: 1.5rem 0;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.why {
+  background-color: hsla(179, 57%, 44%, 0.71);
+  padding: 3rem 3rem;
+  font-weight: 400;
+}
+
+.why-heading {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.why-text {
+  color: hsl(204, 43%, 93%);
+  font-size: 1.4rem;
+  line-height: 1.4;
+  max-width: 80%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
