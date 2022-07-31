@@ -1,0 +1,66 @@
+@media (max-width: 77em) {
+  .text-container {
+    margin-top: 0;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 44em) {
+  body {
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .huddle-icon {
+    top: 2%;
+    width: 15rem;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
+
+  .illustration-img {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .introduction {
+    padding-right: 0;
+    font-size: 1.5rem;
+  }
+
+  .register-btn {
+    align-self: center;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .social-media {
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+}
+
+@media (max-width: 32em) {
+  .main-content {
+    margin-top: 0;
+  }
+}
