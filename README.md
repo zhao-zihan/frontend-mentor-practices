@@ -14,3 +14,4 @@ This is a repo containing all the little projects I completed from this amazing 
 - 07.28.2022 - [social-proof-section](/social-proof-section-master/)
 - 07.29.2022 - [four-card-feature-section](/four-card-feature-section-master/)
 - 07.30.2022 - [single-price-grid-component](/single-price-grid-component-master/)
+- 07.31.2022 - [huddle-landing-page](/huddle-landing-page-with-single-introductory-section-master/)
