@@ -79,6 +79,7 @@ body {
 
 .details {
   color: rgb(149, 149, 149);
+  line-height: 1.3;
 }
 
 .info-text {
