@@ -7,7 +7,7 @@ const submitEl = document.querySelector(".submit");
 
 const modalEl = document.querySelector(".modal");
 
-const displayScoreEl = document.querySelector(".selected");
+const displayScoreEl = document.querySelector(".display");
 
 let currentRating = 0;
 
