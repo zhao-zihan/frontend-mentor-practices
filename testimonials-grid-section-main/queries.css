@@ -1,4 +1,36 @@
-@media (max-width: 35em) {
+@media (max-width: 58em) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2rem;
+  }
+
+  .daniel {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+  }
+
+  .jonathan {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .kira {
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+
+  .jeanette {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .patrick {
+    grid-row: 3;
+    grid-column: 2 / -1;
+  }
+}
+
+@media (max-width: 37.5em) {
   .container {
     grid-template-columns: 1fr;
     margin-bottom: 2rem;
