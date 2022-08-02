@@ -94,7 +94,7 @@ body {
   background-image: url("images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: left 80% top 0;
-  background-size: 17%;
+  background-size: auto;
 }
 
 .jonathan {
