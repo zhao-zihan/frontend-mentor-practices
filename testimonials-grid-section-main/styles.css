@@ -22,7 +22,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 104rem;
+  max-width: 105rem;
   row-gap: 2rem;
   column-gap: 2.4rem;
 }
