@@ -1,0 +1,36 @@
+@media (max-width: 35em) {
+  .container {
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+  }
+
+  .daniel {
+    grid-row: 1;
+    grid-column: inherit;
+    background-position: right 5% top 0;
+  }
+
+  .jonathan {
+    grid-row: 2;
+    grid-column: inherit;
+  }
+
+  .jeanette {
+    grid-row: 3;
+    grid-column: inherit;
+  }
+
+  .jeanette .testimonial {
+    padding-right: 0;
+  }
+
+  .patrick {
+    grid-row: 4;
+    grid-column: inherit;
+  }
+
+  .kira {
+    grid-row: 5;
+    grid-column: inherit;
+  }
+}
