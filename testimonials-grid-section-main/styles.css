@@ -30,8 +30,6 @@ body {
 .card {
   border-radius: 8px;
   padding: 2rem 2.5rem;
-  display: grid;
-  grid-template-rows: subgrid;
   box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
