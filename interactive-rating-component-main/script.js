@@ -15,6 +15,9 @@ const removeRating = function () {
   for (let i = 0; i < ratingsEl.length; i++) {
     ratingsEl[i].classList.remove("selected-rating");
   }
+  // have to reset currentRating so clicking setCurrent can work
+  // otherwise failed if (currentRating === +this.textContent) condition
+  currentRating = 0;
 };
 
 const setCurrent = function () {
