@@ -112,6 +112,7 @@ Users should be able to:
    ```
 
 8. very important, how to distinguish event
+
    ```js
    // to allow users to unselect current rating by clicking the background
    window.addEventListener("mousedown", function (e) {
@@ -122,12 +123,26 @@ Users should be able to:
    });
    ```
 
+9. event.target returns a single event, use matches keyword for multiple elements with the same class name
+   ```js
+   window.addEventListener("mousedown", function (e) {
+     // https://gomakethings.com/listening-for-events-on-multiple-elements-using-javascript-event-delegation/
+     const isClickedInside =
+       e.target === submitEl || e.target.matches(".rating-btn");
+     if (!isClickedInside) {
+       removeRating();
+       console.log("removed");
+     }
+   });
+   ```
+
 ### Continued development
 
 ### Useful resources
 
 - [complete-javascript-course](https://github.com/zhao-zihan/complete-javascript-course-master) - Check out folder 05, 06, 07.
 - [click background](https://codepen.io/anon/pen/OKMNEy) - This codepen teaches you how to set event listener for clicking your specific targeting areas.
+- [Listening for events on multiple elements using JavaScript event delegation](https://gomakethings.com/listening-for-events-on-multiple-elements-using-javascript-event-delegation/)
 
 ## Author
 
