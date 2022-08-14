@@ -15,9 +15,6 @@ const removeRating = function () {
   for (let i = 0; i < ratingsEl.length; i++) {
     ratingsEl[i].classList.remove("selected-rating");
   }
-  // have to reset currentRating so clicking setCurrent can work
-  // otherwise failed if (currentRating === +this.textContent) condition
-  currentRating = 0;
 };
 
 const setCurrent = function () {
@@ -28,6 +25,7 @@ const setCurrent = function () {
       .classList.remove("selected-rating");
 
     // enable users to click again to cancel selection
+    // close the function without adding selected rating
     if (currentRating === +this.textContent) {
       currentRating = 0;
       return;
@@ -55,9 +53,14 @@ for (let i = 0; i < ratingsEl.length; i++) {
 
 // to allow users to unselect current rating by clicking the background
 window.addEventListener("mousedown", function (e) {
-  const isClickedInside = e.target == submitEl;
+  // event.target returns a single event
+  // use event.target.matches for class with multiple elements
+  // https://gomakethings.com/listening-for-events-on-multiple-elements-using-javascript-event-delegation/
+  const isClickedInside =
+    e.target === submitEl || e.target.matches(".rating-btn");
   if (!isClickedInside) {
     removeRating();
+    console.log("removed");
   }
 });
 
